@@ -19,7 +19,7 @@ public class TestBPNetwork {
 		double[][] x_test = new double[populationNum - trainSize][];
 		double[][] y_test = new double[populationNum - trainSize][];
 		BufferedReader br = new BufferedReader(new FileReader(
-				"C:\\Users\\lagou\\Downloads\\good_corpus.txt"));
+				"C:\\Users\\Downloads\\good_corpus.txt"));
 		int row = 0;
 		for (; row < trainSize; row++) {
 			String[] arr = br.readLine().split("\\s+");

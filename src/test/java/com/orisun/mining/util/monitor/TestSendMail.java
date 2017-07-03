@@ -13,7 +13,7 @@ public class TestSendMail {
 		String basePath = Path.getCurrentPath();
 		SystemConfig.init(basePath + "/config/system.properties");
 		String subject = "Test";
-		String receiver = "orisun@lagou.com";
+		String receiver = "orisun@qq.com";
 		String content = "hello!";
 		List<String> imgs = new ArrayList<String>();
 		imgs.add(basePath + "/data/hist.png");

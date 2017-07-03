@@ -15,8 +15,8 @@ public class TestLR {
 	@Test
 	public void testHRScore() throws IOException, ArgumentException {
 		long start = System.currentTimeMillis();
-		String trainDataFile = "D:\\workspace_lagou\\flow_balance\\flow.train";
-		String trainLabelFile = "D:\\workspace_lagou\\flow_balance\\tag.train";
+		String trainDataFile = "D:\\workspace\\flow_balance\\flow.train";
+		String trainLabelFile = "D:\\workspace\\flow_balance\\tag.train";
 		LogRegression lr = new LogRegression();
 		L_BFGS optimization = new L_BFGS();
 		optimization.setEps(1E-8);
