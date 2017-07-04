@@ -11,9 +11,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<hadoop.version>2.2.0</hadoop.version>
 	</properties>
-	    
+	    A
 	<dependencies>
-		<!-- apache.commons -->
 		<dependency>
 			<groupId>commons-logging</groupId>
 			<artifactId>commons-logging</artifactId>
