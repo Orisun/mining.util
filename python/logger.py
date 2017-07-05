@@ -100,7 +100,7 @@ class Logger(object):
         data_dict['subject'] = self.subject
         data_dict['recip'] = self.receivers
         data_dict['content'] = msg
-        url = 'http://inapi.oss.lagou.com/v1/send/mail/'
+        url = 'http://inapi.oss.com/v1/send/mail/'
         requests.post(url, data=json.dumps(data_dict))
 
     def _check_alert(self, msg):

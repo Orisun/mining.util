@@ -527,7 +527,7 @@ if __name__ == '__main__':
 
     class NegativeFeedback(PO):
 
-        DB = "lagou_rec"
+        DB = "rec"
         TABLE = "negative_feedback"
         ID = "id"
 

@@ -158,15 +158,15 @@ class ConnectionPool(object):
 
 
 if __name__ == '__main__':
-    DB_LAGOU_REC = "lagou_rec"
-    DB_LAGOU = "lagou"
+    DB_REC = "rec"
+    DB_MY = "mytable"
     ConnectionPoolFactory.setConfFile("../../conf/db.conf.offline")
     conn3 = ConnectionPoolFactory.getConnectionPool(
-        DB_LAGOU_REC).getConnection()
-    conn4 = ConnectionPoolFactory.getConnectionPool(DB_LAGOU).getConnection()
+        DB_REC).getConnection()
+    conn4 = ConnectionPoolFactory.getConnectionPool(DB_MY).getConnection()
     conn1 = ConnectionPoolFactory.getConnectionPool(
-        DB_LAGOU_REC).getConnection()
-    conn2 = ConnectionPoolFactory.getConnectionPool(DB_LAGOU).getConnection()
+        DB_REC).getConnection()
+    conn2 = ConnectionPoolFactory.getConnectionPool(DB_MY).getConnection()
     cursor1 = conn1.cursor()
     cursor1.execute('select * from negative_feedback limit 1')
     data = cursor1.fetchone()
@@ -178,8 +178,8 @@ if __name__ == '__main__':
     conn1.close()
     conn2.close()
 
-    ConnectionPoolFactory.getConnectionPool(DB_LAGOU_REC).refresh()
-    ConnectionPoolFactory.getConnectionPool(DB_LAGOU).refresh()
+    ConnectionPoolFactory.getConnectionPool(DB_REC).refresh()
+    ConnectionPoolFactory.getConnectionPool(DB_MY).refresh()
 
     cursor3 = conn3.cursor()
     cursor3.execute('select * from negative_feedback limit 1')
