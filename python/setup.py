@@ -1,14 +1,14 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="LagouMining",
-    version="0.0.1",
-    description='data mining utility of Lagou',
+    name="OrisunMining",
+    version="1.0.0",
+    description='data mining utility of Orisun',
     license='MIT License',
-    url='http://www.lagou.com/',
+    url='https://github.com/Orisun',
 
     author='orisun',
-    author_email='orisun@lagou.com',
+    author_email='zhchya@gmail.com',
 
     packages=find_packages(),
     include_package_data=True,
