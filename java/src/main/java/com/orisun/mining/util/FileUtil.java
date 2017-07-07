@@ -7,6 +7,8 @@ import java.util.*;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
+import org.xerial.snappy.Snappy;
+
 /**
  * 文件操作工具类
  * 
@@ -41,6 +43,34 @@ public class FileUtil {
 		}
 		bis.close();
 		zos.close();
+	}
+
+	/**
+	 * 使用snappy算法进行压缩。如果出异常则返回空byte数组
+	 * 
+	 * @param values
+	 * @return
+	 */
+	public static byte[] snappyCompress(byte[] values) {
+		try {
+			return Snappy.compress(values);
+		} catch (IOException e) {
+			return new byte[0];
+		}
+	}
+
+	/**
+	 * 使用snappy算法进行解压缩。如果出异常则返回空byte数组
+	 * 
+	 * @param values
+	 * @return
+	 */
+	public static byte[] snappyUncompress(byte[] values) {
+		try {
+			return Snappy.uncompress(values);
+		} catch (IOException e) {
+			return new byte[0];
+		}
 	}
 
 	/**

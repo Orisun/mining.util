@@ -2,7 +2,7 @@ package com.orisun.mining.util.dao;
 
 import java.util.Date;
   
-@DataBase(name = DBName.RECOMMEND)
+@DataBase(name = DBName.MYDB)
 @Table(name = "user_deliver")
 public class UserDeliver {
 

@@ -20,7 +20,7 @@ public class TestBaseDao {
 	public static void setup() {
 		String basePath = Path.getCurrentPath();
 		PropertyConfigurator.configure(basePath + "/config/log4j.properties");
-		DaoHelperPool.configDb(DBName.RECOMMEND, basePath
+		DaoHelperPool.configDb(DBName.MYDB, basePath
 				+ "/config/db_rec.properties", null);
 		try {
 			heScoreDao = new HrScoreDao();

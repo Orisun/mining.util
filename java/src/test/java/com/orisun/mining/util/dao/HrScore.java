@@ -2,7 +2,7 @@ package com.orisun.mining.util.dao;
 
 import java.sql.Timestamp;
 
-@DataBase(name = DBName.RECOMMEND)
+@DataBase(name = DBName.MYDB)
 @Table(name = "hr_model_pvscore")
 public class HrScore {
 

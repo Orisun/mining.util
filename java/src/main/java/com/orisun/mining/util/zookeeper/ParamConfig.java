@@ -2,7 +2,7 @@ package com.orisun.mining.util.zookeeper;
 
 import com.orisun.mining.util.dao.*;
 
-@DataBase(name = DBName.RECOMMEND)
+@DataBase(name = DBName.MYDB)
 @Table(name = "param_config")
 public class ParamConfig {
 

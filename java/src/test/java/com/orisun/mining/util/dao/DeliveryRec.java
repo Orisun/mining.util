@@ -1,6 +1,6 @@
 package com.orisun.mining.util.dao;
 
-@DataBase(name = DBName.RECOMMEND)
+@DataBase(name = DBName.MYDB)
 @Table(name = "delivery_rec")
 public class DeliveryRec {
 	@Id

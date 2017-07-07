@@ -1,7 +1,7 @@
 package com.orisun.mining.util.dao;
 
 
-@DataBase(name = DBName.RECOMMEND)
+@DataBase(name = DBName.MYDB)
 @Table(name = "hr_model_dealorder")
 public class HrFlowFeature {
 
