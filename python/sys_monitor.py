@@ -15,7 +15,7 @@ avail_mem = 4   #内存还剩4G
 avail_cpu = 10  #CPU还剩10%
 avail_root_disk = 0.1   #根目录磁盘还剩10%
 avail_data_disk = 0.15  #/data目录磁盘还剩15%
-main_receiver = ['dm@lagou.com']    #报警邮件接收人
+main_receiver = ['zhchya@gmail.com']    #报警邮件接收人
 
 
 
@@ -105,10 +105,10 @@ def disk_data_used():
 
 def send_mail(title, content):
     data_dict = {}
-    data_dict['subject'] = u'174服务器' + title + u'报警'
+    data_dict['subject'] = u'服务器' + title + u'报警'
     data_dict['recip'] = main_receiver
     data_dict['content'] = content
-    url = 'http://inapi.oss.lagou.com/v2/send/mail/'
+    url = 'http://inapi.oss.com/v2/send/mail/'
     requests.post(url, data=json.dumps(data_dict))
 
 
